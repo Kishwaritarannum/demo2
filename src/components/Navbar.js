@@ -28,17 +28,19 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+          <Link to='/home' className='navbar-logo' onClick={closeMobileMenu} style={{color:"blue"}}>
+          <i class='fas fa-book-open' />&nbsp;
+            Book Xpert
+            {/* <img src ="/videos/book.png" alt="book expert" style={{height:80, width:300}}/> */}
+           
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+            <li className='nav-item' >
+              <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                About
               </Link>
             </li>
             <li className='nav-item'>
@@ -56,21 +58,22 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Blogs
               </Link>
             </li>
 
-            <li>
+           
+            <li className='nav-item'>
               <Link
-                to='/sign-up'
-                className='nav-links-mobile'
+                to='/'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Logout
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
         </div>
       </nav>
     </>

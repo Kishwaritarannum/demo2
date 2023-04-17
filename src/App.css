@@ -7,6 +7,7 @@
 
 .home,
 .services,
+.books,
 .products,
 .sign-up {
   display: flex;
@@ -24,6 +25,16 @@
   color: #fff;
   font-size: 100px;
 }
+
+.books {
+  background-image: url('/images/book.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
 
 .products {
   background-image: url('/images/img-1.jpg');
